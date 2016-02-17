@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+
+<head>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="angular.min.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+</head>
+
+<body ng-controller="MainController">
+   
+    <div class="container">
+        <div class="row">
+            <canvas id="c" width="500" height="500"></canvas>
+
+        </div>
+         <div class="row">
+             <div class="col-md-2" ng-repeat="values in data">
+                
+                <ul ng-class="'t'+values.id" ></ul><span ng-class="'span'+values.id" >Team {{values.id}}</span>
+                
+             </div>
+             
+                
+             </div>
+
+         </div>
+
+    </div>
+ 
+  
+  <script src="scripts.js"></script>
+</body>
+
+</html>
